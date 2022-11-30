@@ -41,7 +41,7 @@ export const actions: import('./$types').Actions = {
 			console.error('success');
 		} catch (e) {
 			console.error('error', e);
-			throw redirect(307, '/');
+			throw redirect(304, '/error');
 		}
 	},
 	print: async ({ request }) => {
